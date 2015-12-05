@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+link_directories(/usr/local/lib)
+include_directories(/usr/local/include)
+add_executable(helloworld main.cpp)
+target_link_libraries(helloworld GL GLU GLEW glfw3 X11 Xi Xrandr Xxf86vm Xinerama Xcursor rt m)
